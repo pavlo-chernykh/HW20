@@ -1,0 +1,75 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": ["eslint:recommended"],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+
+    "plugins": ["@babel"],
+    "parser": "@babel/eslint-parser",
+    "parserOptions": {
+        "ecmaVersion": 2021,
+        "requireConfigFile": false,
+        "babelOptions": {
+            "plugins": [
+                "@babel/plugin-proposal-nullish-coalescing-operator",
+                "@babel/plugin-proposal-optional-chaining",
+                "@babel/plugin-proposal-private-methods",
+                "@babel/proposal-class-properties"
+            ]
+        }
+    },
+    "rules": {
+        "no-console": 2,
+        "quotes": [2, "single"],
+        "semi": [2, "always"],
+        "block-scoped-var": 2,
+        "class-methods-use-this": 2,
+        "eqeqeq": 2,
+        "no-caller": 2,
+        "no-empty-function": 2,
+        "no-setter-return": 2,
+        "no-dupe-else-if": 2,
+        "no-eval": 2,
+        "no-implied-eval": 2,
+        "no-magic-numbers": 2,
+        "no-multi-spaces": 2,
+        "no-new-wrappers": 2,
+        "no-param-reassign": 2,
+        "no-sequences": 2,
+        "no-label-var": 2,
+        "no-shadow": 2,
+        "no-undefined": 2,
+        "no-use-before-define": 2,
+        "block-spacing": 2,
+        "max-params": [2, { "max": 5 }],
+        "no-bitwise": 2,
+        "no-trailing-spaces": 2,
+        "prefer-exponentiation-operator": 2,
+        "switch-colon-spacing": [2, { "after": true, "before": false }],
+        "arrow-body-style": [2, "as-needed"],
+        "arrow-spacing": [2, { "before": true, "after": true }],
+        "generator-star-spacing": [2, { "before": true, "after": false }],
+        "no-useless-constructor": 2,
+        "no-var": 2,
+        "prefer-arrow-callback": 2,
+        "prefer-const": 2,
+        "prefer-destructuring": 2,
+        "camelcase": 2,
+        "linebreak-style": 0,
+        "indent": 0,
+        "max-len": [2, { "code": 120 }],
+        "no-unused-expressions": [
+            2,
+            {
+                "allowShortCircuit": true,
+                "allowTernary": true,
+                "allowTaggedTemplates": true
+            }
+        ]
+    }
+}

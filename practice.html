@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    class Animal {
+      constructor(name) {
+        this.speed = 0;
+        this.name = name;
+      }
+      run(speed) {
+        this.speed = speed;
+        alert(`${this.name} runs at speed of up to ${this.speed} km/hour`);
+      }
+      stop() {
+        this.speed = 0;
+        console.log(`${this.name} stops!`);
+      }
+    }
+
+    let animal = new Animal('My pet');
+
+    class Rabbit extends Animal {
+    
+      hide() {
+        console.log(`${this.name} hides!`);
+      }
+
+      stop() {
+        `${super.stop()} and then ${this.hide()}`;
+        ;
+      }
+    }
+
+  let rabbit = new Rabbit("white Rabbit");
+
+  rabbit.stop()
+
+  </script>
+</body>
+</html>

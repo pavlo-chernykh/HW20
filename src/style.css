@@ -1,0 +1,79 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background-color: #003147;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+body > * {
+  width: 300px;
+  margin: 0 auto;
+}
+.todoHeader {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: lightblue;
+  font-size: 3em;
+  line-height: 1.4em;
+}
+.create-form__field {
+  min-width: 25em;
+  min-height: 3em;
+  background-color: lightblue;
+  padding: 0.5em;
+}
+.create-form__field:focus {
+  outline: none;
+}
+.create-form__submit {
+  margin-top: 20px;
+  background-color: lightblue;
+  border: none;
+  color: white;
+  padding: 5px 24px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.todo-list {
+  padding-left: 0;
+  margin-top: 32px;
+  margin-bottom: 0;
+  min-width: 300px;
+}
+
+.todo-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 8px;
+  border: 1px solid grey;
+  font-size: 1.2em;
+  color: lightblue;
+}
+.todo-card__remove {
+  background-color: lightblue;
+  border: none;
+  color: white;
+  padding: 2px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  cursor: pointer;
+  align-items:flex-start;
+}
+.todo-card:not(:last-child) {
+  margin-bottom: 12px;
+}
+.stat-container {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: lightblue;
+}
